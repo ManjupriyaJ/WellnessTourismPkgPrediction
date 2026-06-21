@@ -22,10 +22,10 @@ mlflow.set_experiment("mlops-training-experiment")
 api = HfApi()
 
 
-Xtrain_path = "hf://datasets/ManjupriyaJ/Tourism-Package-Purchase-Prediction/Xtrain.csv"
-Xtest_path = "hf://datasets/ManjupriyaJ/Tourism-Package-Purchase-Prediction/Xtest.csv"
-ytrain_path = "hf://datasets/ManjupriyaJ/Tourism-Package-Purchase-Prediction/ytrain.csv"
-ytest_path = "hf://datasets/ManjupriyaJ/Tourism-Package-Purchase-Prediction/ytest.csv"
+Xtrain_path = "hf://datasets/Sasimscct/Tourism-Package-Purchase-Prediction/Xtrain.csv"
+Xtest_path = "hf://datasets/Sasimscct/Tourism-Package-Purchase-Prediction/Xtest.csv"
+ytrain_path = "hf://datasets/Sasimscct/Tourism-Package-Purchase-Prediction/ytrain.csv"
+ytest_path = "hf://datasets/Sasimscct/Tourism-Package-Purchase-Prediction/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
@@ -142,7 +142,7 @@ with mlflow.start_run():
     print(f"Model saved as artifact at: {model_path}")
 
     # Upload to Hugging Face
-    repo_id = "ManjupriyaJ/Tourism-Package-Purchase-Prediction"
+    repo_id = "Sasimscct/Tourism-Package-Purchase-Prediction"
     repo_type = "model"
 
     # Step 1: Check if the space exists
