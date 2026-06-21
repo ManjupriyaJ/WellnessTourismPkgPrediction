@@ -50,7 +50,7 @@ for file_path in files:
     api.upload_file(
         path_or_fileobj=file_path,
         path_in_repo=file_path.split("/")[-1],
-        repo_id="ManjupriyaJ/Tourism-Package-Purchase-Prediction",
+        repo_id="Sasimscct/Tourism-Package-Purchase-Prediction",
         repo_type="dataset",
     )
 
